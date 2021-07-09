@@ -45,8 +45,10 @@ function App() {
     <div className="App">
       <GlobalStyles />
       <ThemeProvider theme={original}>
-        <AppBar theme={original}>
-          <Toolbar style={{ justifyContent: "space-between" }}>
+        <AppBar theme={original} style={{ position: "fixed" }}>
+          <Toolbar
+            style={{ justifyContent: "space-between", position: "sticky" }}
+          >
             <div style={{ position: "relative", display: "inline-block" }}>
               <Button
                 onClick={() => setOpen(!open)}
