@@ -69,33 +69,40 @@ function App() {
                     }}
                     onClick={() => setOpen(false)}
                   >
-                    <Switch>
                       <Divider />
-                      <Route component={Home} path="/" exact>
+                      <Link to="/" exact>
                         <ListItem>
-                          <span role="img" aria-label="🏡"></span>
+                          <span role="img" aria-label="🏡">
                           🏡 Home
-                        </ListItem>
-                      </Route>
-
-                      <Divider />
-                      <ListItem>
-                        <Route component={Strains} path="/strains">
-                          <span role="img" aria-label="🌿">
-                            🌿
                           </span>
-                          Strains
-                        </Route>
-                      </ListItem>
-                    </Switch>
+                        </ListItem>
+                      </Link>
+                      <Divider />
+                      <Link to="/strains">
+                        <ListItem>
+                            <span role="img" aria-label="🌿">
+                              🌿
+                            </span>
+                            Strains
+                        </ListItem>
+
+                      </Link>
                   </List>
                 )}
               </div>
             </Toolbar>
           </AppBar>
         </Router>
-      </ThemeProvider>
+      </ThemeProvider> 
+      <div className="content">
+        <br>
+        </br>
       <h1> BRIX 95</h1>
+        <Switch>
+          <Route component={Home} path="/"  render={(props) => (<Home/>)} exact/>
+          <Route component={Strains} path="/strains"/>
+        </Switch>
+      </div>
     </div>
   );
 }
