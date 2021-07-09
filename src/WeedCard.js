@@ -30,6 +30,7 @@ export default function WeedCard({ weed }) {
       </Toolbar>
       <WindowContent>
         <span className="DescriptionSpan">
+          <img src={weed.url} className="weedPic" />
           <h1>Description:</h1>
         </span>
         <p>{weed.description}</p>

@@ -4,6 +4,7 @@ import { Route, Switch, Link, withRouter } from "react-router-dom";
 import { createGlobalStyle, ThemeProvider } from "styled-components";
 import original from "react95/dist/themes/original";
 import Strains from "./Strains";
+import Contact from "./Contact";
 import Home from "./Home";
 
 import {
@@ -55,12 +56,7 @@ function App() {
                 active={open}
                 style={{ fontWeight: "bold" }}
               >
-                {/* <img
-                  src="🌿"
-                  alt="react95 logo"
-                  style={{ height: "20px", marginRight: 4 }}
-                /> */}
-                Start
+                💾 Start
               </Button>
               {open && (
                 <List
@@ -71,7 +67,6 @@ function App() {
                   }}
                   onClick={() => setOpen(false)}
                 >
-                  <Divider />
                   <Link to="/" exact>
                     <ListItem>
                       <span role="img" aria-label="🏡">
@@ -88,6 +83,14 @@ function App() {
                       Strains
                     </ListItem>
                   </Link>
+                  <Divider />
+                  <Link to="/contact">
+                    <ListItem>
+                      <span role="img" aria-label="👨‍👩‍👦">
+                        👨‍👩‍👦 Contact
+                      </span>
+                    </ListItem>
+                  </Link>
                 </List>
               )}
             </div>
@@ -100,6 +103,7 @@ function App() {
         <Switch>
           <Route path="/" exact render={() => <Home />} />
           <Route component={Strains} path="/strains" />
+          <Route component={Contact} path="/contact" />
         </Switch>
       </div>
     </div>
