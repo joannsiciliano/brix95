@@ -72,8 +72,9 @@ function App() {
                       <Divider />
                       <Link to="/" exact>
                         <ListItem>
-                          <span role="img" aria-label="🏡"></span>
+                          <span role="img" aria-label="🏡">
                           🏡 Home
+                          </span>
                         </ListItem>
                       </Link>
                       <Divider />
@@ -98,7 +99,7 @@ function App() {
         </br>
       <h1> BRIX 95</h1>
         <Switch>
-          <Route component={Home} path="/" exact render={(props) => (<Home/>)}/>
+          <Route component={Home} path="/"  render={(props) => (<Home/>)} exact/>
           <Route component={Strains} path="/strains"/>
         </Switch>
       </div>
