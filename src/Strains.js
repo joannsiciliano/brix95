@@ -13,7 +13,11 @@ export default class Strains extends Component {
   displayStrains = () => {
     return this.state.strains.map((strain) => {
       return (
-        <WeedCard strain={this.state.strains} key={this.state.strains.id} />
+        <WeedCard
+          strains={this.state.strains}
+          key={this.state.strains.id}
+          weed={strain}
+        />
       );
     });
   };
