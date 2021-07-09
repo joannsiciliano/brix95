@@ -1,9 +1,24 @@
-import React from "react";
+import React, { Component } from "react";
+import WeedCard from "./WeedCard";
+export default class Strains extends Component {
+  state = {
+    strains: [],
+  };
+  componentDidMount() {
+    fetch("http://localhost:3000/strains")
+      .then((response) => response.json())
+      .then((data) => this.setState({ strains: data }));
+  }
 
-export default function Strains() {
-  return (
-    <div className="Strains">
-      <h1> HELLO</h1>
-    </div>
-  );
+  displayStrains = () => {
+    return this.state.strains.map((strain) => {
+      return (
+        <WeedCard strain={this.state.strains} key={this.state.strains.id} />
+      );
+    });
+  };
+
+  render() {
+    return <div className="Strains">{this.displayStrains()}</div>;
+  }
 }
