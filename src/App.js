@@ -61,15 +61,15 @@ function App() {
                   Start
                 </Button>
                 {open && (
-                  <List
-                    style={{
-                      position: "absolute",
-                      left: "0",
-                      top: "100%",
-                    }}
-                    onClick={() => setOpen(false)}
-                  >
-                    <Switch>
+                  <Switch>
+                    <List
+                      style={{
+                        position: "absolute",
+                        left: "0",
+                        top: "100%",
+                      }}
+                      onClick={() => setOpen(false)}
+                    >
                       <Divider />
                       <Route component={Home} path="/" exact>
                         <ListItem>
@@ -79,16 +79,16 @@ function App() {
                       </Route>
 
                       <Divider />
-                      <ListItem>
-                        <Route component={Strains} path="/strains">
+                      <Route component={Strains} path="/strains">
+                        <ListItem>
                           <span role="img" aria-label="🌿">
                             🌿
                           </span>
                           Strains
-                        </Route>
-                      </ListItem>
-                    </Switch>
-                  </List>
+                        </ListItem>
+                      </Route>
+                    </List>
+                  </Switch>
                 )}
               </div>
             </Toolbar>
