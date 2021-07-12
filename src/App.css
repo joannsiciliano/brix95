@@ -92,3 +92,10 @@ h1 {
 .title {
   font-size: 5rem;
 }
+.BrixLogo {
+  width: 70%;
+  margin-top: 60px;
+}
+.BrixLogo:hover {
+  opacity: 0.8;
+}
