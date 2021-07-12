@@ -1,5 +1,7 @@
 import React from "react";
 import brixlogo from "./brix5.png";
+
+
 const Home = () => {
   return (
     <div className="Home">
