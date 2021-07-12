@@ -10,6 +10,10 @@ export default class Strains extends Component {
       .then((data) => this.setState({ strains: data }));
   }
 
+  // showStrain(){
+  //   console.log("HIT!")
+  // }
+
   displayStrains = () => {
     return this.state.strains.map((strain) => {
       return (
@@ -23,6 +27,6 @@ export default class Strains extends Component {
   };
 
   render() {
-    return <div className="Strains">{this.displayStrains()}</div>;
+    return <div onClick={() => this.props.handleClick()} className="Strains">{this.displayStrains()}</div>;
   }
 }
