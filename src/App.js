@@ -43,11 +43,6 @@ function App() {
   ${styleReset}
 `;
 
-  function handleClick(){
-    // event.stopPropagation();
-    console.log("HIT!")
-  }
-
 
   return (
     <div className="App">
@@ -110,7 +105,7 @@ function App() {
         <Switch>
           <Route path="/" exact render={() => <Home />} />
           <Route path="/strains" exact render={() => (
-            <Strains handleClick={handleClick} />
+            <Strains />
           )} />
           <Route component={Contact} path="/contact" />
           {/* <Route component={Strain} path="/strain" /> */}

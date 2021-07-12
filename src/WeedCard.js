@@ -12,10 +12,14 @@ import {
 } from "react95";
 
 export default function WeedCard({ weed }) {
-  
-  
+
+  let handleClick = (weed) => {
+    console.log(weed)
+  }
+
+
   return (
-    <Window resizable className="window">
+    <Window resizable className="window" onClick={() => handleClick(weed.id)}>
       <WindowHeader className="window-header">
         <span>{weed.name}</span>
       </WindowHeader>
