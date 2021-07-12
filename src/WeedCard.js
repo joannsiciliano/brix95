@@ -12,6 +12,8 @@ import {
 } from "react95";
 
 export default function WeedCard({ weed }) {
+  
+  
   return (
     <Window resizable className="window">
       <WindowHeader className="window-header">
@@ -19,7 +21,7 @@ export default function WeedCard({ weed }) {
       </WindowHeader>
       <Toolbar>
         <Button variant="menu" size="sm">
-          File
+          Review
         </Button>
         <Button variant="menu" size="sm">
           Edit
