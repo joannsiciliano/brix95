@@ -3,7 +3,7 @@ import React from "react";
 import { Route, Switch, Link, withRouter } from "react-router-dom";
 import { createGlobalStyle, ThemeProvider } from "styled-components";
 import original from "react95/dist/themes/original";
-// import Strain from "./Strain";
+import Strain from "./Strain";
 import Strains from "./Strains";
 import Contact from "./Contact";
 import Home from "./Home";
@@ -42,7 +42,6 @@ function App() {
   }
   ${styleReset}
 `;
-
 
   return (
     <div className="App">
@@ -104,11 +103,9 @@ function App() {
         <h1> BRIX 95</h1>
         <Switch>
           <Route path="/" exact render={() => <Home />} />
-          <Route path="/strains" exact render={() => (
-            <Strains />
-          )} />
+          <Route path="/strains" exact render={() => <Strains />} />
           <Route component={Contact} path="/contact" />
-          {/* <Route component={Strain} path="/strain" /> */}
+          <Route component={Strain} path="/strains/:id" />
         </Switch>
       </div>
     </div>
