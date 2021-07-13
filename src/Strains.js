@@ -40,24 +40,6 @@ export default class Strains extends Component {
     });
   };
 
-  handleClick = () => {
-    console.log("HELLO");
-    // fetch(`http://localhost:3000/strains/${weed.id}`, {
-    //   method: "GET",
-    //   headers: {
-    //     "Content-Type": "application/json"
-    //   },
-    //   body: JSON.stringify({
-    //     strain: {
-    //       id: weed.id
-    //     },
-    //   }),
-    // })
-    //   .then(response => response.json())
-    //   .then(strain => console.log(strain))
-  };
-  // onClick={() => this.props.handleClick()}
-
   render() {
     return <div className="Strains">{this.displayStrains()}</div>;
   }

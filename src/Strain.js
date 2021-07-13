@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import SingleStrainCard from "./SingleStrainCard";
+import { Link } from "react-router-dom";
 
 export default function Strain() {
   const [singlePost, setSinglePost] = useState([]);
@@ -20,5 +21,12 @@ export default function Strain() {
   const displayStrainCard = () => {
     return <SingleStrainCard post={singlePost} />;
   };
-  return <div className="Strain">{displayStrainCard()}</div>;
+  return (
+    <div className="StrainDiv">
+      <span>{displayStrainCard()}</span>
+      <Link to="/strains" exact>
+        <button>BACK</button>
+      </Link>
+    </div>
+  );
 }
