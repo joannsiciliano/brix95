@@ -16,6 +16,9 @@ export default function Strain() {
       })
       .catch((err) => setErrors(true));
   }, []);
-
-  return <div className="Strain"></div>;
+  console.log(singlePost);
+  const displayStrainCard = () => {
+    return <SingleStrainCard post={singlePost} />;
+  };
+  return <div className="Strain">{displayStrainCard()}</div>;
 }
