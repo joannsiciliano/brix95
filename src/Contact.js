@@ -77,11 +77,10 @@ export default function Contact() {
           </Button>
         </Toolbar>
         <WindowContent>
-          <span className="DescriptionSpan">
-            <h1>Contact:</h1>
-          </span>
+          <span className="DescriptionSpan"></span>
           <p></p>
         </WindowContent>
+
         <Panel variant="well" className="footer">
           <span className="THCspan">THC Content: 0 </span>
         </Panel>

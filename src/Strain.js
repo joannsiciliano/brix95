@@ -25,7 +25,7 @@ export default function Strain() {
     <div className="StrainDiv">
       <span>{displayStrainCard()}</span>
       <Link to="/strains" exact>
-        <button>BACK</button>
+        <button className="Button">BACK</button>
       </Link>
     </div>
   );

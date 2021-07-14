@@ -1,4 +1,5 @@
 import React from "react";
+import ReactStars from "react-rating-stars-component";
 import {
   Window,
   WindowContent,
@@ -9,6 +10,9 @@ import {
 } from "react95";
 
 export default function SingleStrainCard({ post }) {
+  const ratingChanged = (newRating) => {
+    console.log(newRating);
+  };
   return (
     <div className="SingleStrainCard">
       <Window resizable className="window">
@@ -38,6 +42,14 @@ export default function SingleStrainCard({ post }) {
           {post.thc_content}
         </Panel>
       </Window>
+      <p className="RateP">Rate This Strain:</p>
+      <ReactStars
+        count={5}
+        onChange={ratingChanged}
+        size={30}
+        activeColor="#ffd700"
+        className="ReactStars"
+      />
     </div>
   );
 }

@@ -104,5 +104,24 @@ h1 {
   margin-top: 200px;
 }
 .SingleStrainCard {
+  margin-left: 200px;
+  margin-top: 50px;
+}
+.StrainDiv {
   margin: auto;
+}
+.Button {
+  width: 100px;
+  height: 50px;
+  margin-left: 100px;
+  margin-top: 20px;
+  box-shadow: 1px 1px 1px black;
+}
+.RateP {
+  font-size: 20px;
+  text-shadow: 1px 1px 1px rgb(39, 39, 39);
+}
+.ReactStars {
+  margin-left: 50px;
+  box-shadow: 1px 1px 1px black;
 }
