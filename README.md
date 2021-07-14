@@ -27,4 +27,4 @@
 
 
 # Contact
-  Application made by Jo Siciliano, Alexander Sherwin, and Sam Gold.
+  Application made by [Jo Siciliano](https://www.linkedin.com/in/joannsiciliano/), [Alexander Sherwin](https://www.linkedin.com/in/alexander-sherwin/), and [Sam Gold](https://www.linkedin.com/in/samgold57/).
