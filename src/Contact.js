@@ -28,7 +28,7 @@ export default function Contact() {
         </Toolbar>
         <WindowContent>
           <span className="DescriptionSpan">
-            <h1>Contact:</h1>
+            <img src={} className="ProfilePic"/>
           </span>
           <p></p>
         </WindowContent>
@@ -53,7 +53,7 @@ export default function Contact() {
         </Toolbar>
         <WindowContent>
           <span className="DescriptionSpan">
-            <h1>Contact:</h1>
+            <img src={} className="ProfilePic"/>
           </span>
           <p></p>
         </WindowContent>
@@ -78,6 +78,7 @@ export default function Contact() {
         </Toolbar>
         <WindowContent>
           <span className="DescriptionSpan"></span>
+          <img src={} className="ProfilePic"/>
           <p></p>
         </WindowContent>
 
