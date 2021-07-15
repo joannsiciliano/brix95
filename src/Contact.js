@@ -5,12 +5,15 @@ import {
   WindowHeader,
   Button,
   Toolbar,
+  Desktop,
   Panel,
 } from "react95";
-
+import Xan from "./2021_Headshot.jpeg";
+import Jo from "./profilePic.png";
 export default function Contact() {
   return (
     <div className="Contact">
+      <Desktop backgroundStyles={{ background: "blue" }} />
       <Window resizable className="window">
         <WindowHeader className="window-header">
           <span>JoAnn Siciiliano</span>
@@ -28,7 +31,7 @@ export default function Contact() {
         </Toolbar>
         <WindowContent>
           <span className="DescriptionSpan">
-            <img src={} className="ProfilePic"/>
+            <img src={Jo} className="ProfilePic" alt="jo profile" />
           </span>
           <p></p>
         </WindowContent>
@@ -53,7 +56,7 @@ export default function Contact() {
         </Toolbar>
         <WindowContent>
           <span className="DescriptionSpan">
-            <img src={} className="ProfilePic"/>
+            <img src={Xan} className="ProfilePic" alt="Xan profile" />
           </span>
           <p></p>
         </WindowContent>
@@ -78,7 +81,7 @@ export default function Contact() {
         </Toolbar>
         <WindowContent>
           <span className="DescriptionSpan"></span>
-          <img src={} className="ProfilePic"/>
+          <img src={""} className="ProfilePic" alt="Sam profile" />
           <p></p>
         </WindowContent>
 

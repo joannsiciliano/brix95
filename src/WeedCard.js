@@ -1,7 +1,5 @@
 import React from "react";
 import "./App.css";
-import ms_sans_serif_bold from "react95/dist/fonts/ms_sans_serif_bold.woff2";
-import styled from "styled-components";
 import {
   Window,
   WindowContent,
@@ -30,7 +28,7 @@ export default function WeedCard({ weed }) {
       </Toolbar>
       <WindowContent>
         <span className="DescriptionSpan">
-          <img src={weed.url} className="weedPic" />
+          <img src={weed.url} className="weedPic" alt="strain pic" />
           <h1>Description:</h1>
         </span>
         <p>{weed.description}</p>

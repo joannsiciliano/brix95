@@ -32,7 +32,7 @@ export default function SingleStrainCard({ post }) {
         </Toolbar>
         <WindowContent>
           <span className="DescriptionSpan">
-            <img src={post.url} className="weedPic" />
+            <img src={post.url} className="weedPic" alt="single strain" />
             <h1>Description:</h1>
           </span>
           <p>{post.description}</p>
