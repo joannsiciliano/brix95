@@ -10,6 +10,9 @@ const Home = () => {
         alt="brix"
         title="Welcome to Brix_95, a review website for brick weed :) "
       />
+      <section className="home_intro">
+        "Come rate some Brick Weed, at Brix95"
+      </section>
     </main>
   );
 };

@@ -1,5 +1,6 @@
 body {
   background-color: rgb(1, 130, 129);
+  height: 100vh;
 }
 h1 {
   margin-top: 100px;
@@ -85,11 +86,24 @@ h1 {
 .Home {
   width: 100%;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   text-align: center;
   background-image: url("https://media.giphy.com/media/l3V0j6CZY3qX69Lva/giphy.gif");
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.home_intro{
+
+  background: rgba(0,0,0, .5) ;
+  width: 20vw;
+  color: antiquewhite;
+
+}
+
 .title {
   font-size: 5rem;
 }
