@@ -12,7 +12,7 @@ import Xan from "./2021_Headshot.jpeg";
 import Jo from "./profilePic.png";
 export default function Contact() {
   return (
-    <div className="Contact">
+    <main className="Contact">
       <Desktop backgroundStyles={{ background: "blue" }} />
       <Window resizable className="window">
         <WindowHeader className="window-header">
@@ -89,6 +89,6 @@ export default function Contact() {
           <span className="THCspan">THC Content: 0 </span>
         </Panel>
       </Window>
-    </div>
+    </main>
   );
 }

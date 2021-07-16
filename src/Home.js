@@ -3,14 +3,14 @@ import brixlogo from "./brix5.png";
 
 const Home = () => {
   return (
-    <div className="Home">
+    <main className="Home">
       <img
         src={brixlogo}
         className="BrixLogo"
         alt="brix"
         title="Welcome to Brix_95, a review website for brick weed :) "
       />
-    </div>
+    </main>
   );
 };
 
