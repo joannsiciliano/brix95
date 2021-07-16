@@ -8,8 +8,11 @@ import {
   Desktop,
   Panel,
 } from "react95";
+
 import Xan from "./2021_Headshot.jpeg";
 import Jo from "./profilePic.png";
+import Sam from "./AU_What_Up.jpg"
+
 export default function Contact() {
   return (
     <main className="Contact">
@@ -81,7 +84,7 @@ export default function Contact() {
         </Toolbar>
         <WindowContent>
           <span className="DescriptionSpan"></span>
-          <img src={""} className="ProfilePic" alt="Sam profile" />
+          <img src={Sam} className="ProfilePic" alt="Sam profile" />
           <p></p>
         </WindowContent>
 
