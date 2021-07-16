@@ -97,16 +97,17 @@ function App() {
           </Toolbar>
         </AppBar>
       </ThemeProvider>
-      <div className="content">
+      <main className="content">
         <br></br>
         <h1> BRIX 95</h1>
+        
         <Switch>
           <Route path="/" exact render={() => <Home />} />
           <Route path="/strains" exact render={() => <Strains />} />
           <Route component={Contact} path="/contact" />
           <Route component={Strain} path="/strains/:id" />
         </Switch>
-      </div>
+      </main>
     </div>
   );
 }
