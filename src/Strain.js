@@ -22,11 +22,11 @@ export default function Strain() {
     return <SingleStrainCard post={singlePost} />;
   };
   return (
-    <div className="StrainDiv">
+    <main className="StrainDiv">
       <span>{displayStrainCard()}</span>
       <Link to="/strains" exact>
         <button className="Button">BACK</button>
       </Link>
-    </div>
+    </main>
   );
 }

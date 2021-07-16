@@ -41,6 +41,6 @@ export default class Strains extends Component {
   };
 
   render() {
-    return <div className="Strains">{this.displayStrains()}</div>;
+    return <main className="Strains">{this.displayStrains()}</main>;
   }
 }
