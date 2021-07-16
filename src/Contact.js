@@ -9,6 +9,8 @@ import {
   Panel,
 } from "react95";
 
+import "./App.css"
+
 import Xan from "./2021_Headshot.jpeg";
 import Jo from "./profilePic.png";
 import Sam from "./AU_What_Up.jpg"
@@ -16,7 +18,7 @@ import Sam from "./AU_What_Up.jpg"
 export default function Contact() {
   return (
     <main className="Contact">
-      <Desktop backgroundStyles={{ background: "blue" }} />
+      {/* <Desktop backgroundStyles={{ background: "blue" }} /> */}
       <Window resizable className="window">
         <WindowHeader className="window-header">
           <span>JoAnn Siciiliano</span>
@@ -83,11 +85,11 @@ export default function Contact() {
           </Button>
         </Toolbar>
         <WindowContent>
-          <span className="DescriptionSpan"></span>
-          <img src={Sam} className="ProfilePic" alt="Sam profile" />
-          <p></p>
+          <span className="DescriptionSpan">
+            <img src={Sam} className="ProfilePic" alt="Sam profile" />
+          </span>
+            <p></p>
         </WindowContent>
-
         <Panel variant="well" className="footer">
           <span className="THCspan">THC Content: 0 </span>
         </Panel>
