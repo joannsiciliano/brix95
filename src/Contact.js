@@ -13,7 +13,7 @@ import "./App.css"
 
 import Xan from "./2021_Headshot.jpeg";
 import Jo from "./profilePic.png";
-import Sam from "./AU_What_Up.jpg"
+import Sam from "./AU.jpg"
 
 export default function Contact() {
   return (
